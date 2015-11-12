@@ -8,6 +8,8 @@
   <Label Text="Please Log In" VerticalOptions="Center" HorizontalOptions="Center" />
     <Entry Placeholder="Email" Keyboard="Email" Text="{Binding Email}" />
     <Entry Placeholder="Password" IsPassword="True" Text="{Binding Password}" />
+    <Label Text="Password is too short" IsVisible="{Binding PasswordToShortVisible}" />
+    <Button Text="Login" Command="LoginCommand" />
   </StackLayout>
   </ScrollView>
 </ContentPage>
