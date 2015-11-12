@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MvvmSample.Pages.LoginPage"
+             Title="MVVM Cross Sample">
+  <ScrollView>
+  <StackLayout VerticalOptions="Center">
+  <Label Text="Please Log In" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Entry Placeholder="Email" Keyboard="Email" Text="{Binding Email}" />
+    <Entry Placeholder="Password" IsPassword="True" Text="{Binding Password}" />
+  </StackLayout>
+  </ScrollView>
+</ContentPage>
