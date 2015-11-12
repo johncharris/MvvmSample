@@ -14,5 +14,7 @@ namespace MvvmSample.Models
 
         public string FirstName { get { return _firstName; } set { SetProperty(ref _firstName, value); } }
         public string LastName { get { return _lastName; } set { SetProperty(ref _lastName, value); } }
+
+        public string FullName {  get { return FirstName ?? string.Empty + " " + LastName ?? string.Empty; } }
     }
 }

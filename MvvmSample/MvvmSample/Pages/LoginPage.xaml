@@ -9,7 +9,7 @@
     <Entry Placeholder="Email" Keyboard="Email" Text="{Binding Email}" />
     <Entry Placeholder="Password" IsPassword="True" Text="{Binding Password}" />
     <Label Text="Password is too short" IsVisible="{Binding PasswordToShortVisible}" />
-    <Button Text="Login" Command="LoginCommand" />
+    <Button Text="Login" Command="{Binding LoginCommand}" />
   </StackLayout>
   </ScrollView>
 </ContentPage>
